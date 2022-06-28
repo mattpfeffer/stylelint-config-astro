@@ -1,18 +1,18 @@
 # stylelint-config-astro
 
-A shareable Stylelint config for linting Astro (`.astro`) files.
+A shareable Stylelint config for linting Astro (`.astro`) files :rocket:
 
 ## The low down
 
-This config bundles [PostCSS HTML] and configures it to parse .astro files so you can use Stylelint
+This config bundles [`postcss-html`] and configures it to parse .astro files so you can use Stylelint
 on the `<style></style>` section within those components.
 
 ## Minimum Requirements
 
 This package requires the following peer depenencies:
 
--   [Stylelint] v14.0.0 and above
--   [PostCSS HTML] v1.0.0 and above
+-   [stylelint] v14.0.0 and above
+-   [postcss-html] v1.0.0 and above
 
 ## Installation
 
@@ -51,7 +51,6 @@ files.
 {
     "stylelint.validate": [
         ...,
-        // Add "astro" extension.
         "astro"
     ]
 }
@@ -64,4 +63,4 @@ Although this package is not a direct fork it heavily leverages the the work of
 [stylelint-config-html](https://github.com/ota-meshi/stylelint-config-html).
 
 [stylelint]: https://stylelint.io/
-[postcss html]: https://github.com/ota-meshi/postcss-html
+[postcss-html]: https://github.com/ota-meshi/postcss-html

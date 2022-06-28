@@ -4,7 +4,7 @@ A shareable Stylelint config for linting Astro (`.astro`) files :rocket:
 
 ## The low down
 
-This config bundles [`postcss-html`] and configures it to parse .astro files so you can use Stylelint
+This config bundles [postcss-html] and configures it to parse .astro files so you can use Stylelint
 on the `<style></style>` section within those components.
 
 ## Minimum Requirements

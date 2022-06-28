@@ -47,7 +47,7 @@ files.
 
 **.vscode/settings.json**:
 
-```json
+```jsonc
 {
     "stylelint.validate": [
         ...,

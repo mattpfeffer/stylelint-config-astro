@@ -9,6 +9,12 @@
         "type": "git",
         "url": "git+https://github.com/mattpfeffer/stylelint-config-astro.git"
     },
+    "keywords": [
+        "stylelint",
+        "config",
+        "stylelint-config",
+        "astro"
+    ],
     "scripts": {
         "types": "tsc -w",
         "next": "node ./.scripts/next-version.cjs",

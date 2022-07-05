@@ -9,7 +9,7 @@ on the `<style></style>` section within those components.
 
 ## Minimum Requirements
 
-This package requires the following peer depenencies:
+This package is compatible with the following peer dependencies:
 
 -   [stylelint] v14.0.0 and above
 -   [postcss-html] v1.0.0 and above
@@ -26,11 +26,15 @@ yarn add --dev postcss-html stylelint-config-astro
 
 ## Usage
 
-Set your `stylelint` config to:
+Append to the [`extends` array](https://stylelint.io/user-guide/configure/#extends) in your
+`.stylelintrc.*` file. It's usually best placed **after** your other rulesets.
 
-```json
+```jsonc
 {
-    "extends": "stylelint-config-astro"
+    "extends": [
+        // other configs ...
+        "stylelint-config-astro"
+    ]
 }
 ```
 
@@ -50,7 +54,7 @@ files.
 ```jsonc
 {
     "stylelint.validate": [
-        ...,
+        // other file extensions...
         "astro"
     ]
 }

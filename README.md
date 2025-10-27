@@ -9,10 +9,10 @@ on the `<style></style>` section within those components.
 
 ## Minimum Requirements
 
-This package is compatible with the following peer dependencies:
+From v2, this package is compatible with the following peer dependencies:
 
--   [stylelint] v14.0.0 and above
--   [postcss-html] v1.0.0 and above
+-   [stylelint] v16.0.0 and above
+-   [postcss-html] v1.6.0 and above
 
 ## Installation
 
@@ -30,7 +30,7 @@ pnpm add --save-dev postcss-html stylelint-config-astro
 ## Usage
 
 Append to the [`extends` array](https://stylelint.io/user-guide/configure/#extends) in your
-`.stylelintrc.*` file. It's usually best placed **after** your other rulesets.
+`stylelint.config.js` or equivalent. It's usually best placed **after** your other rulesets.
 
 ```jsonc
 {
@@ -50,13 +50,16 @@ Use the official
 extension.
 
 Add the `.astro` file extension to `stylelint.validate` under settings to enable linting for Astro
-files.
+files. It's also a good idea to add `.html`, `.vue`, `.svelte`, etc. if you're working in a mixed project. This package also adds basic support for those file types.
 
 **.vscode/settings.json**:
 
 ```jsonc
 {
     "stylelint.validate": [
+        "html",
+        "vue",
+        "svelte",
         // other file extensions...
         "astro"
     ]
@@ -71,3 +74,5 @@ Although this package is not a direct fork it heavily leverages the the work of
 
 [stylelint]: https://stylelint.io/
 [postcss-html]: https://github.com/ota-meshi/postcss-html
+
+_Note: At the time of development, stylelint-config-html did not support Astro files natively. It now does, so you may want to consider using that package instead if you want support for a broader set of file types._

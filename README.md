@@ -50,7 +50,7 @@ Use the official
 extension.
 
 Add the `.astro` file extension to `stylelint.validate` under settings to enable linting for Astro
-files. It's also a good idea to add `.html`, `.vue`, `.svelte`, etc. if you're working in a mixed project. This package also adds basic support for those file types.
+files. It's also a good idea to add `.html`, `.vue`, `.svelte`, etc. if you're working in a mixed project - this package adds basic support for those file types as well.
 
 **.vscode/settings.json**:
 

@@ -20,8 +20,11 @@ This package is compatible with the following peer dependencies:
 # Using npm
 npm install --save-dev postcss-html stylelint-config-astro
 
-# Using Yarn
+# Using yarn
 yarn add --dev postcss-html stylelint-config-astro
+
+# Using pnpm
+pnpm add --save-dev postcss-html stylelint-config-astro
 ```
 
 ## Usage

@@ -1,8 +1,12 @@
 ### Dependencies & Artifacts ###
 
 node_modules/
-.sass-cache/
-.cache-loader/
+
+### Environment Variables ###
+
+.env
+.env.*
+!.env.example
 
 ### Log Files ###
 
@@ -33,6 +37,11 @@ logs/
 .phpintel/
 .atom/
 .idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 ### System Files ###
 

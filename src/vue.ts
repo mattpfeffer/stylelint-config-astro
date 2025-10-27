@@ -1,4 +1,4 @@
-const vueExtensions = ['.svelte'];
+const vueExtensions = ['.vue'];
 
 module.exports = {
     overrides: [

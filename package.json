@@ -1,52 +1,52 @@
 {
-  "name": "stylelint-config-astro",
-  "version": "1.0.4",
-  "description": "A shareable Stylelint config for linting Astro files.",
-  "main": "dist/index.js",
-  "author": "Matt Pfeffer (https://github.com/mattpfeffer)",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mattpfeffer/stylelint-config-astro.git"
-  },
-  "keywords": [
-    "stylelint",
-    "config",
-    "stylelint-config",
-    "astro"
-  ],
-  "scripts": {
-    "types": "tsc -w",
-    "next": "node ./.scripts/next-version.cjs",
-    "release": "standard-version",
-    "prepare": "husky"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^20.1.0",
-    "@commitlint/config-conventional": "^20.0.0",
-    "@typescript-eslint/eslint-plugin": "^8.46.2",
-    "@typescript-eslint/parser": "^8.46.2",
-    "commit-and-tag-version": "^12.6.0",
-    "conventional-recommended-bump": "^11.2.0",
-    "eslint": "^9.38.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-n": "^17.23.1",
-    "eslint-plugin-promise": "^7.2.1",
-    "husky": "^9.1.7",
-    "prettier": "^3.6.2",
-    "semver": "^7.7.3",
-    "stylelint": "^14.16.1",
-    "stylelint-config-prettier": "^9.0.5",
-    "stylelint-config-standard": "^26.0.0"
-  },
-  "peerDependencies": {
-    "postcss-html": "^1.0.0",
-    "stylelint": ">=14.0.0"
-  },
-  "dependencies": {
-    "typescript": "^5.9.3"
-  },
-  "packageManager": "pnpm@10.19.0"
+    "name": "stylelint-config-astro",
+    "version": "1.0.4",
+    "description": "A shareable Stylelint config for linting Astro files.",
+    "main": "dist/index.js",
+    "author": "Matt Pfeffer (https://github.com/mattpfeffer)",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mattpfeffer/stylelint-config-astro.git"
+    },
+    "keywords": [
+        "stylelint",
+        "config",
+        "stylelint-config",
+        "astro"
+    ],
+    "scripts": {
+        "types": "tsc -w",
+        "next": "node ./.scripts/next-version.cjs",
+        "release": "standard-version",
+        "prepare": "husky"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^20.1.0",
+        "@commitlint/config-conventional": "^20.0.0",
+        "@typescript-eslint/eslint-plugin": "^8.46.2",
+        "@typescript-eslint/parser": "^8.46.2",
+        "commit-and-tag-version": "^12.6.0",
+        "conventional-recommended-bump": "^11.2.0",
+        "eslint": "^9.38.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-n": "^17.23.1",
+        "eslint-plugin-promise": "^7.2.1",
+        "husky": "^9.1.7",
+        "neostandard": "^0.12.2",
+        "prettier": "^3.6.2",
+        "semver": "^7.7.3",
+        "stylelint": "^14.16.1",
+        "stylelint-config-prettier": "^9.0.5",
+        "stylelint-config-standard": "^26.0.0"
+    },
+    "peerDependencies": {
+        "postcss-html": "^1.0.0",
+        "stylelint": ">=14.0.0"
+    },
+    "dependencies": {
+        "typescript": "^5.9.3"
+    },
+    "packageManager": "pnpm@10.19.0"
 }

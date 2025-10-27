@@ -21,31 +21,31 @@
         "release": "standard-version"
     },
     "devDependencies": {
-        "@commitlint/cli": "^17.0.2",
-        "@commitlint/config-conventional": "^17.0.2",
-        "@typescript-eslint/eslint-plugin": "^5.27.1",
-        "@typescript-eslint/parser": "^5.27.1",
+        "@commitlint/cli": "^17.8.1",
+        "@commitlint/config-conventional": "^17.8.1",
+        "@typescript-eslint/eslint-plugin": "^5.62.0",
+        "@typescript-eslint/parser": "^5.62.0",
         "conventional-recommended-bump": "^6.1.0",
-        "eslint": "^8.17.0",
-        "eslint-config-prettier": "^8.5.0",
-        "eslint-config-standard": "^17.0.0",
-        "eslint-plugin-import": "^2.26.0",
-        "eslint-plugin-n": "^15.2.2",
-        "eslint-plugin-promise": "^6.0.0",
-        "husky": "^8.0.1",
-        "prettier": "^2.6.2",
-        "semver": "^7.3.7",
+        "eslint": "^8.57.1",
+        "eslint-config-prettier": "^8.10.2",
+        "eslint-config-standard": "^17.1.0",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-n": "^15.7.0",
+        "eslint-plugin-promise": "^6.6.0",
+        "husky": "^8.0.3",
+        "prettier": "^2.8.8",
+        "semver": "^7.7.3",
         "standard-version": "^9.5.0",
-        "stylelint": "^14.9.0",
-        "stylelint-config-prettier": "^9.0.3",
+        "stylelint": "^14.16.1",
+        "stylelint-config-prettier": "^9.0.5",
         "stylelint-config-standard": "^26.0.0"
     },
     "peerDependencies": {
-        "stylelint": ">=14.0.0",
-        "postcss-html": "^1.0.0"
+        "postcss-html": "^1.0.0",
+        "stylelint": ">=14.0.0"
     },
     "dependencies": {
-        "typescript": "^4.7.3"
+        "typescript": "^4.9.5"
     },
     "packageManager": "pnpm@10.19.0"
 }

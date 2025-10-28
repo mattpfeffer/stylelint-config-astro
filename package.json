@@ -1,6 +1,6 @@
 {
     "name": "stylelint-config-astro",
-    "version": "1.0.4",
+    "version": "2.0.0",
     "description": "A shareable Stylelint config for linting Astro files.",
     "author": "Matt Pfeffer (https://github.com/mattpfeffer)",
     "license": "MIT",

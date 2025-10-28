@@ -51,7 +51,7 @@
         "build": "pnpm run clean && tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json && node ./.scripts/fix-cjs.cjs",
         "types": "tsc -p tsconfig.json -w",
         "next": "node ./.scripts/next-version.cjs",
-        "release": "standard-version",
+        "release": "commit-and-tag-version",
         "prepare": "husky"
     },
     "devDependencies": {

@@ -1,5 +1,5 @@
 const htmlExtensions = ['.html', '.htm'];
-module.exports = {
+const config = {
     overrides: [
         {
             files: htmlExtensions.flatMap((ext) => [`*${ext}`, `**/*${ext}`]),
@@ -7,3 +7,4 @@ module.exports = {
         }
     ]
 };
+export default config;

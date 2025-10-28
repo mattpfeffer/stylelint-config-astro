@@ -1,6 +1,6 @@
 const astroExtensions = ['.astro'];
 
-module.exports = {
+const config = {
     overrides: [
         {
             files: astroExtensions.flatMap((ext) => [`*${ext}`, `**/*${ext}`]),
@@ -8,3 +8,5 @@ module.exports = {
         }
     ]
 };
+
+export default config;

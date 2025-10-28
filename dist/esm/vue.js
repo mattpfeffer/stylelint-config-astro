@@ -1,5 +1,5 @@
-const vueExtensions = ['.svelte'];
-module.exports = {
+const vueExtensions = ['.vue'];
+const config = {
     overrides: [
         {
             files: vueExtensions.flatMap((ext) => [`*${ext}`, `**/*${ext}`]),
@@ -7,3 +7,4 @@ module.exports = {
         }
     ]
 };
+export default config;

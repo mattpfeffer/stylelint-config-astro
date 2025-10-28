@@ -1,6 +1,6 @@
 const vueExtensions = ['.vue'];
 
-module.exports = {
+const config = {
     overrides: [
         {
             files: vueExtensions.flatMap((ext) => [`*${ext}`, `**/*${ext}`]),
@@ -8,3 +8,5 @@ module.exports = {
         }
     ]
 };
+
+export default config;

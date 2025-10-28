@@ -1,3 +1,7 @@
-module.exports = {
-    extends: [require.resolve('./astro'), require.resolve('./vue'), require.resolve('./svelte'), require.resolve('./html')]
+const packageName = 'stylelint-config-astro';
+
+const config = {
+    extends: [`${packageName}/astro`, `${packageName}/vue`, `${packageName}/svelte`, `${packageName}/html`]
 };
+
+export default config;

@@ -2,7 +2,6 @@
     "name": "stylelint-config-astro",
     "version": "1.0.4",
     "description": "A shareable Stylelint config for linting Astro files.",
-    "main": "dist/index.js",
     "author": "Matt Pfeffer (https://github.com/mattpfeffer)",
     "license": "MIT",
     "repository": {
@@ -15,8 +14,42 @@
         "stylelint-config",
         "astro"
     ],
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "exports": {
+        ".": {
+            "import": "./dist/esm/index.js",
+            "require": "./dist/cjs/index.js",
+            "default": "./dist/esm/index.js"
+        },
+        "./astro": {
+            "import": "./dist/esm/astro.js",
+            "require": "./dist/cjs/astro.js",
+            "default": "./dist/esm/astro.js"
+        },
+        "./vue": {
+            "import": "./dist/esm/vue.js",
+            "require": "./dist/cjs/vue.js",
+            "default": "./dist/esm/vue.js"
+        },
+        "./svelte": {
+            "import": "./dist/esm/svelte.js",
+            "require": "./dist/cjs/svelte.js",
+            "default": "./dist/esm/svelte.js"
+        },
+        "./html": {
+            "import": "./dist/esm/html.js",
+            "require": "./dist/cjs/html.js",
+            "default": "./dist/esm/html.js"
+        }
+    },
+    "files": [
+        "dist/"
+    ],
     "scripts": {
-        "types": "tsc -w",
+        "clean": "node -e \"require('fs').rmSync('dist', { recursive: true, force: true });\"",
+        "build": "pnpm run clean && tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json && node ./.scripts/fix-cjs.cjs",
+        "types": "tsc -p tsconfig.json -w",
         "next": "node ./.scripts/next-version.cjs",
         "release": "standard-version",
         "prepare": "husky"
@@ -24,6 +57,7 @@
     "devDependencies": {
         "@commitlint/cli": "^20.1.0",
         "@commitlint/config-conventional": "^20.0.0",
+        "@types/node": "^24.9.1",
         "@typescript-eslint/eslint-plugin": "^8.46.2",
         "@typescript-eslint/parser": "^8.46.2",
         "commit-and-tag-version": "^12.6.0",
@@ -37,12 +71,12 @@
         "neostandard": "^0.12.2",
         "prettier": "^3.6.2",
         "semver": "^7.7.3",
-        "stylelint": "^16.25.0",
-        "stylelint-config-standard": "^39.0.1"
+        "stylelint": "^14.16.1",
+        "stylelint-config-standard": "^26.0.0"
     },
     "peerDependencies": {
-        "postcss-html": "^1.6.0",
-        "stylelint": ">=16.0.0"
+        "postcss-html": "^1.0.0",
+        "stylelint": ">=14.0.0"
     },
     "dependencies": {
         "typescript": "^5.9.3"

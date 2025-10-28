@@ -1,5 +1,7 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const astroExtensions = ['.astro'];
-module.exports = {
+const config = {
     overrides: [
         {
             files: astroExtensions.flatMap((ext) => [`*${ext}`, `**/*${ext}`]),
@@ -7,3 +9,6 @@ module.exports = {
         }
     ]
 };
+exports.default = config;
+
+module.exports = exports.default;

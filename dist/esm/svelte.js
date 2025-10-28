@@ -1,5 +1,5 @@
 const svelteExtensions = ['.svelte'];
-module.exports = {
+const config = {
     overrides: [
         {
             files: svelteExtensions.flatMap((ext) => [`*${ext}`, `**/*${ext}`]),
@@ -7,3 +7,4 @@ module.exports = {
         }
     ]
 };
+export default config;

@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "es2022",
+        "rootDir": "src",
+        "resolveJsonModule": true,
+        "strictNullChecks": true,
+        "isolatedModules": false,
+        "types": ["node"]
+    },
+    "include": ["src/**/*.ts"]
+}
